@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2? family= Joan & family= Roboto:wght@500 & display=swap');
+
+/*reset*/
+
+*{
+    font-family: 'Joan', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*===========Grids index=========*/
+
+.primera{
+    background-color:white;
+    grid-area: primera;
+}
+
+.segunda{
+    background-color: black;
+    grid-area: segunda;
+}
+
+.tercera{
+    background-color: black;
+    grid-area: tercera;
+    margin-bottom: 2%;
+}
+
+.cuarta{
+    background-color: black;
+    grid-area: cuarta;
+    margin-bottom: 2%;
+}
+
+.quinta{
+    background-color: white;
+    grid-area: quinta;
+    margin-top: 2%;
+}
+
+#contenedorGrid{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "primera" "segunda" "tercera" "cuarta" "quinta";
+}
+
+/*===========Fin Grids Index========*/
+
+.textWhite{
+    color: white;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.imagen{
+    width: 100%;
+}
+
+.marginTop{
+    margin-top: 2%;
+}
+
+.biografia{
+    background-color: black;
+    color: white;
+    grid-area: tres;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.imagenEscritos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    float: left;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.imagenLibro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+}
+
+.display{
+    display: flex;
+}
+
+.borde{
+    border-bottom: 2px solid wheat;
+    padding: 2%;
+}
+
+.fondoBlack{
+    background-color: black;
+}
+
+.fondoWhite{
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonera ul{
+    display: flex;
+    list-style: none;
+}
+
+    .botonera ul li{
+        margin-right: 10px;
+    }
+
+        .botonera ul li a{
+        color: black;
+        text-decoration: none;
+    }
+
+.tituloPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    }
+
+.escritoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .titulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+#pie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+/*=============Grids escritos===============*/
+
+.uno{
+    background-color:white;
+    grid-area: uno;
+}
+
+.dos{
+    background-color: black;
+    grid-area: dos;
+    padding: 2%;
+}
+
+.tres{
+    background-color: black;
+    color: white;
+    grid-area: tres;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cuatro{
+    background-color: black;
+    color: white;
+    grid-area: cuatro;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cinco{
+    background-color: black;
+    color: white;
+    grid-area: cinco;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.seis{
+    background-color: black;
+    color: white;
+    grid-area: seis;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.siete{
+    background-color: white;
+    grid-area: siete;
+    margin-top: 2%;
+}
+
+#contenedorGridEscritos{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete";
+}
+
+/*============= Grids desktop===============*/
+
+@media only screen and (min-width: 1024px){
+
+body{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "uno uno"
+    "dos dos"
+    "main main"
+    "siete siete"
+}
+
+.escritosDesktop{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-template-areas:
+"tres cuatro"
+"cinco seis";
+}
+
+.tres{
+    display: grid;
+    align-items: start;
+}
+
+.cuatro{
+    display: grid;
+    align-items: start;
+}
+
+.cinco{
+    display: grid;
+    align-items: start;
+}
+
+.seis{
+    display: grid;
+    align-items: start;
+}
+
+.borde{
+    border-left: 2px solid wheat;
+}
+
+}

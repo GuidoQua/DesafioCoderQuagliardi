@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila Malumbres - Libros y escritos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.png">
+</head>
+<body>
+<div id="contenedorGrid">
+    <nav class="fondoWhite botonera">
+    <div class="primera">
+        <a href="../index.html">
+            <img src="../img/logo.png" alt="logo de Camila Malumbres - Libros y escritos">
+        </a>
+        <ul>
+            <li>
+                <a href="libros.html">Libros</a>
+            </li>
+            <li>
+                <a href="escritos.html">Escritos</a>
+            </li>
+            <li>
+                <a href="biografia.html">Biografia</a>
+            </li>
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    <!-- ends nav -->
+    <header>
+    <div class="segunda">
+        <h1 class="titulos textWhite">Contacto</h1>
+    </div>
+    </header>
+    <!-- ends header-->
+    <main class="fondoBlack">
+        <section>
+        <div class="tercera textWhite escritoPrincipal">
+            <form action="envio.php">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                        <br>
+                        <label for="nombre">Nombre y Apellido:</label>
+                        <input type="text" id="nombre">
+                        <br>
+                        <label for="telefono">Telefono</label>
+                        <input type="text" id="telefono" required>
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="mail@mail.com" required>
+                        <br>
+                        <label for="sexo">Sexo</label>
+                        <br>
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" id="hombre" value="hombre" name="sexo">
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" id="mujer" value="mujer" name="sexo">     <!--no usar etiqueta br-->
+                        <br>
+                        <label for="provincia">Provincia</label>
+                        <select name="" id="provincia">
+                            <option value="buenosaires">Buenos Aires</option>
+                            <option value="cordoba">Cordoba</option>
+                            <option value="santafe">Santa Fe</option>
+                            <option value="entrerios">Entre Rios</option>
+                        </select>
+                        <br>
+                        <label for="acuerdo">Estoy de acuerdo en dejar mis datos personales</label>
+                        <input type="checkbox" id="acuerdo" value="acepto" required>
+                </fieldset>
+                <br>
+                <label for="mensaje">Deje su mensaje:</label>
+                <br>
+                <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+                <br>
+                <input type="reset" value="Cancelar">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        </section>
+        <!-- ends form-->
+        <section>
+        <div class="cuarta escritoPrincipal">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.7901705835457!2d-61.09552478483286!3d-33.89505748064905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b810f8aecbdcef%3A0x80cf8a0b4b927fb0!2sC.%2052%201035%2C%20Col%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2ses!4v1653875106553!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+        <!-- ends map-->
+    </main>
+    <footer id="pie">
+    <div class="quinta">
+        <a href="https://www.instagram.com/camila.malumbres/?hl=es" target="_blank">
+            <img src="../img/instagram.png" alt="Instagram - Camila Malumbres - Autora - libros y escritos - Los que no piden permiso ">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="../img/facebook.png" alt="Facebook - Camila Malumbres - Autora - libros y escritos - Los que no piden permiso">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="../img/twitter.png" alt="">
+        </a>
+    </div>
+    </footer>
+</div>
+</body>
+</html>
