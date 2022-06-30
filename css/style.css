@@ -125,9 +125,9 @@ nav{
     list-style: none;
 }
 
-    .botonera ul li{
-        margin-right: 10px;
-    }
+.botonera ul li{
+    margin-right: 5px;
+}
 
         .botonera ul li a{
         color: black;
@@ -161,7 +161,6 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
 }
 
 /*=============Grids escritos===============*/
@@ -287,4 +286,32 @@ grid-template-areas:
     border-left: 2px solid wheat;
 }
 
+}
+
+/*============= Desafio Animaciones ===============*/
+
+.gradiente{
+    background: linear-gradient(to top, white, black);
+}
+
+.scale:hover{
+    transform: scaleX(1.05);
+    cursor: pointer;
+    transition: 3s;
+}
+
+@keyframes headerAnimacion{
+    0%{background-image: url(../img/biografia1.jpeg);}
+    35%{background-image: url(../img/biografia2.jpeg);}
+    70%{background-image: url(../img/biografia3.jpeg);}
+    100%{background-image: url(../img/biografia4.jpeg);}
+}
+
+.animacionFotos{
+    height: 80vh;
+    animation-name: headerAnimacion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-repeat:round;
+    margin-bottom: 2%;
 }
