@@ -300,6 +300,29 @@ grid-template-areas:
     transition: 3s;
 }
 
+.rote:hover{
+    transform: rotate(120deg);
+    cursor: pointer;
+    transition: 3s;
+}
+
+.translate:hover{
+    transform: translate(0px, 20px);
+    cursor: pointer;
+    transition: 3s;
+    text-decoration: underline;
+}
+
+nav li:hover{
+    cursor: pointer;
+    transition: 1s;
+    background: rgb(222, 222, 222);
+    transform: scale(1.1);
+    border-radius: 15%;
+    font-weight: 700;
+}
+
+
 @keyframes headerAnimacion{
     0%{background-image: url(../img/biografia1.jpeg);}
     35%{background-image: url(../img/biografia2.jpeg);}
